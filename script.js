@@ -13,7 +13,7 @@ let food ={
 }
 
 function criarBG(){
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "yellow";
     context.fillRect(0, 0, 16*box, 16*box); //desenha o retângulo usando x e y e a largura e altura setadas
 }
 
@@ -25,7 +25,7 @@ function criarCobrinha (){
 }
 
 function drawFood (){
-    context.fillStyle = "red";
+    context.fillStyle = "orange";
     context.fillRect(food.x, food.y, box, box);
 }
 
@@ -70,6 +70,14 @@ function iniciarJogo(){
     }else{
         food.x = Math.floor(Math.random() * 15 +1) * box;
         food.y = Math.floor(Math.random() * 15 +1) * box;
+                if(food.x == true && food.y == true){
+
+                        let myscore = 1;
+                        for(i = 0; i < myscore; i++){
+
+                            console.log(myscore);
+                        } 
+                }
     }
     
     let newHead ={
